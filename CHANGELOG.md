@@ -10,6 +10,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## Chapter 6
 
 - Added sequel and sqlite3 gems.
+- Added migration files. Requires the `:db` tag for tests that need to touch the database.
 
 ## Chapter 5
 
