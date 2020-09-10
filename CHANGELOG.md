@@ -12,3 +12,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Added start of acceptance tests.
 - Started unit tests.
 - Refactoring work. Implemented start of Ledger class.
+- Completed chapter 5 with implementation of `get /expenses/:date`.
