@@ -9,6 +9,10 @@ module ExpenseTracker
       API.new(ledger: ledger)
     end
 
+    def parse_response(response)
+      return JSON.parse response
+    end
+
     let(:ledger) { instance_double('ExpenseTracker::Ledger') }
 
     describe 'POST /expenses' do
@@ -23,9 +27,7 @@ module ExpenseTracker
 
         it 'returns the expense id' do
           post '/expenses', JSON.generate(expense)
-
-          parsed = JSON.parse(last_response.body)
-          expect(parsed).to include 'expense_id' => 417
+          expect(parse_response(last_response.body)).to include 'expense_id' => 417
         end
 
         it 'responss with a 200 (OK)' do
@@ -45,9 +47,7 @@ module ExpenseTracker
 
         it 'returns an error message' do
           post '/expenses', JSON.generate(expense)
-
-          parsed = JSON.parse last_response.body
-          expect(parsed).to include 'error' => 'Expense incomplete'
+          expect(parse_response(last_response.body)).to include 'error' => 'Expense incomplete'
         end
 
         it 'responds with a 422 (Unprocessable entity)' do
