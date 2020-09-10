@@ -9,3 +9,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Initial project creation.
 - Add Guard with rspec and bundler options.
+- Added start of acceptance tests.
+- Started unit tests.
+- About to start p72 "Refactoring"
