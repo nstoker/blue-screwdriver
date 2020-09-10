@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## Chapter 6
+
+- Added sequel and sqlite3 gems.
+
+## Chapter 5
+
 - Initial project creation.
 - Add Guard with rspec and bundler options.
 - Added start of acceptance tests.
