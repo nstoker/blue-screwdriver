@@ -11,6 +11,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Added sequel and sqlite3 gems.
 - Added migration files. Requires the `:db` tag for tests that need to touch the database.
+- Completed the tests up to the point of checking the application works for real (p98).
+- The application can be ran and tested using curl.
 
 ## Chapter 5
 
